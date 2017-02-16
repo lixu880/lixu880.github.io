@@ -376,3 +376,7 @@ function moveDown(){
     setTimeout("updateBoardView()",200);
     return true;
 }
+/*去掉手机滑动默认行为*/
+$('body').on('touchmove', function (event) {
+    event.preventDefault();
+});
